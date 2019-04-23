@@ -178,9 +178,9 @@ Place images to be used in the images sub folder of the training data folder
 	
 from data_preparation.py   Prepare the data for training by running the following 
 
-	image_to_base64.convert_all_files    to convert image files to base 64 to the format needed by Google Vision
-	base64_to_json.read_all_images       submits base64 images to Google Vision api and gets json in return
-	json_to_table.create_all_tables      converts the json to a table
+	-image_to_base64.convert_all_files    to convert image files to base 64 to the format needed by Google Vision
+	-base64_to_json.read_all_images       submits base64 images to Google Vision api and gets json in return
+	-json_to_table.create_all_tables      converts the json to a table
 		
 Put appropriate csv labels in the labels subfolder.  If the image name is img1.png then the corresponding label should be named img1_labels.csv
 An Excel file manual_labeller.xlsm is provided to facilitate creation of the appropriately formatted label files manually from the table files.
@@ -188,9 +188,9 @@ An Excel file manual_labeller.xlsm is provided to facilitate creation of the app
 from data_preparation.py    Create arrays by running table_to_array.create_all_arrays    
 converts the table and the labels to numpy arrays encoding words with GloVe. This creates 3 array sets:-
 
-	data arrays in the array_data subfolder     3d numpy arrays encoding image and location with GloVe along the channel dimension
-	label arrays in the array_labels subfolder   labels correspond to the indices from the tag master csv file.  0 means no word
-	word location map in the array_wordmap subfolder  -1 means no word maps to that pixel
+	-data arrays in the array_data subfolder     3d numpy arrays encoding image and location with GloVe along the channel dimension
+	-label arrays in the array_labels subfolder   labels correspond to the indices from the tag master csv file.  0 means no word
+	-word location map in the array_wordmap subfolder  -1 means no word maps to that pixel
 
 ### Generating training data - 2 - by python ###
 
