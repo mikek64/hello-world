@@ -66,9 +66,9 @@ A deeper explanation is available in the linked [slides](https://docs.google.com
 
 Python 3.x
 
-	numpy
-	pytorch (040)   https://pytorch.org/
-	matplotlib
+	-numpy
+	-pytorch (040)   https://pytorch.org/
+	-matplotlib
 	
 b64   for converting images to base 64   https://sourceforge.net/projects/base64/
 
@@ -99,13 +99,13 @@ Save a list of common words to a local file for training data generation, e.g. f
 
 Set up local folders for:-
 
-	Training data [TRAINING_DATA]
-	Temp files for use in prediction [TEMP_DATA]
-	Images to be predicted [IMAGES]
+	-Training data [TRAINING_DATA]
+	-Temp files for use in prediction [TEMP_DATA]
+	-Images to be predicted [IMAGES]
 		Put the example invoice inv1.png in the example_data subfolder into this folder to test with this
-	Tags to be used in training data generation [TRAINING_DATA_GENERATION]
+	-Tags to be used in training data generation [TRAINING_DATA_GENERATION]
 		Populate this with a tags file and lists of tags as per the example_tags subfolder examples 
-	Models [MODEL]
+	-Models [MODEL]
 	
 Create a master file for labels, see Example_Labels_Master.csv for an example and explanation below [LABEL_MASTER]
 	
